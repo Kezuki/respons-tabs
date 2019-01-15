@@ -1,0 +1,92 @@
+.respons-tabs__menu {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.respons-tabs__menu-item {
+    text-decoration: none;
+    box-sizing: border-box;
+    color: #ad5a55;
+    width: 32.6%;
+    background-color: #F5F5F5;
+    border-top: 7px solid #CCCCCC;
+    position: relative;
+    border-bottom: 12px solid #fff;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    cursor: pointer;
+}
+
+.respons-tabs__menu-item h3 {
+    color: #666;
+    max-width: 240px;
+    padding-right: 10px;
+}
+
+.respons-tabs__img {
+    height: 50px;
+    margin: 0 20px 0 8%;
+    max-width: 65px;
+    fill: #666;
+    flex-shrink: 0;
+}
+
+.respons-tabs__menu-item:hover .respons-tabs__img {
+    fill: #ad5a55;
+}
+
+.respons-tabs__menu-item:hover h3 {
+    color: #ad5a55;
+}
+
+.respons-tabs__menu-item_active {
+    background-color: #F2EFEE;
+    border-top: 7px solid #ad5a55;
+    border-bottom: 12px solid #F2EFEE;
+    color: #ad5a55;
+}
+
+.respons-tabs__menu-item_active h3 {
+    color: #ad5a55; 
+}
+
+.respons-tabs__menu-item_active .respons-tabs__img {
+    fill: #ad5a55;
+}
+
+.respons-tabs__text-item {
+    padding: 30px;
+    background-color: #F2EFEE;
+}
+
+@media screen and (max-width: 992px) {
+    .respons-tabs__menu-item h3 {
+        font-size: 18px
+    }
+}
+
+@media (max-width: 768px) {
+    .respons-tabs__menu {
+        flex-direction: column;
+    } 
+    
+    .respons-tabs__menu-item {
+        width: 100%;
+        height: 100px;
+        border-bottom: 0;
+    }
+
+    .respons-tabs__menu-item h3 {
+        max-width: 100%;
+    }
+
+    .respons-tabs__text-item {
+        padding: 5px 30px 30px;
+    }
+
+    .respons-tabs__img {
+        height: 45px;
+    }
+}
