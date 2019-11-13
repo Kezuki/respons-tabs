@@ -5,6 +5,7 @@ new MyTabs({
     breakPoint: '768'
 });
 
+
 new MyTabs({
     mainElem: '.jsRespons-tabs33',
     activeClass: 'respons-tabs__menu-item_active',
