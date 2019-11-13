@@ -1,22 +1,34 @@
 .respons-tabs__menu {
     display: flex;
     justify-content: space-between;
-    margin-top: 10px;
 }
 
 .respons-tabs__menu-item {
     text-decoration: none;
     box-sizing: border-box;
-    color: #ad5a55;
-    width: 32.6%;
-    background-color: #F5F5F5;
-    border-top: 7px solid #CCCCCC;
+    color: #fff;
+    width: 100%;
+    background-color: #00BCD4;
+    border-bottom: 4px solid #00BCD4;
     position: relative;
-    border-bottom: 12px solid #fff;
     display: flex;
     align-items: center;
-    height: 140px;
+    height:90px;
+    justify-content: center;
     cursor: pointer;
+}
+
+.respons-tabs__menu-item span {
+    opacity: 0.85;
+    transition: 0.2s;
+}
+
+.respons-tabs__menu-item_active {
+    border-bottom: 4px solid #EEE239;
+}
+
+.respons-tabs__menu-item_active span {
+    opacity: 1;
 }
 
 .respons-tabs__menu-item h3 {
@@ -33,20 +45,7 @@
     flex-shrink: 0;
 }
 
-.respons-tabs__menu-item:hover .respons-tabs__img {
-    fill: #ad5a55;
-}
 
-.respons-tabs__menu-item:hover h3 {
-    color: #ad5a55;
-}
-
-.respons-tabs__menu-item_active {
-    background-color: #F2EFEE;
-    border-top: 7px solid #ad5a55;
-    border-bottom: 12px solid #F2EFEE;
-    color: #ad5a55;
-}
 
 .respons-tabs__menu-item_active h3 {
     color: #ad5a55; 
@@ -56,9 +55,14 @@
     fill: #ad5a55;
 }
 
+.respons-tabs__text {
+    box-shadow: 0 3px 3px -2px rgba(0,0,0,.2), 0 3px 4px 0 rgba(0,0,0,.14), 0 1px 8px 0 rgba(0,0,0,.12);
+}
+
 .respons-tabs__text-item {
     padding: 30px;
-    background-color: #F2EFEE;
+    background-color: #fff;
+    
 }
 
 @media screen and (max-width: 992px) {
