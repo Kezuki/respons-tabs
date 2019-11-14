@@ -1,6 +1,7 @@
 .respons-tabs__menu {
     display: flex;
     justify-content: space-between;
+    
 }
 
 .respons-tabs__menu-item {
