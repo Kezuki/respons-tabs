@@ -6,19 +6,11 @@ new MyTabs({
 });
 
 
-new MyTabs({
-    mainElem: '.jsRespons-tabs33',
-    activeClass: 'respons-tabs__menu-item_active',
-    adaptive: true,
-    breakPoint: '768'
-});
-
-
 function MyTabs(obj) {
     var _this = this;
 
-    _this.tab = document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__menu-item');
-    _this.text = document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__text-item');
+    _this.tab = document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu-item');
+    _this.text = document.querySelectorAll(obj.mainElem + ' .respons-tabs__text-item');
 
 
     _this.shift = function () {
@@ -63,22 +55,20 @@ function MyTabs(obj) {
             if (innerWidth <= obj.breakPoint) {
 
                 // проверка состояния дом чтобы не запускать выполнение цикла при любом ресайзе
-                if (document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__menu' + ' .jsRespons-tabs__text-item').length == 0) {
+                if (document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu' + ' .respons-tabs__text-item').length == 0) {
 
-                    for (var i = 1; i <= document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__menu-item').length; i++) {
-
+                    for (var i = 1; i <= document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu-item').length; i++) {
                         $(obj.mainElem + ' [data-key=respons-tab_' + i + ']').after($(obj.mainElem + ' [data-value=respons-tab_' + i + ']'));
-
                     }
                 }
             } else {
 
                 // проверка состояния дом чтобы не запускать выполнение цикла при любом ресайзе
-                if (document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__text' + ' .jsRespons-tabs__text-item').length == 0) {
+                if (document.querySelectorAll(obj.mainElem + ' .respons-tabs__text' + ' .respons-tabs__text-item').length == 0) {
 
-                    for (i = 1; i <= document.querySelectorAll(obj.mainElem + ' .jsRespons-tabs__menu-item').length; i++) {
+                    for (i = 1; i <= document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu-item').length; i++) {
 
-                        $(obj.mainElem + '> .jsRespons-tabs__text').append($(obj.mainElem + ' [data-value=respons-tab_' + i + ']'));
+                        $(obj.mainElem + '> .respons-tabs__text').append($(obj.mainElem + ' [data-value=respons-tab_' + i + ']'));
                         
                     }
                 }
