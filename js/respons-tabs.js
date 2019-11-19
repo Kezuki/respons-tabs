@@ -8,6 +8,7 @@ new MyTabs({
 
 function MyTabs(obj) {
     var _this = this;
+    var breakPoint = obj.breakPoint || 768;
 
     _this.tab = document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu-item');
     _this.text = document.querySelectorAll(obj.mainElem + ' .respons-tabs__text-item');
@@ -35,7 +36,7 @@ function MyTabs(obj) {
     _this.responsiveTabs = function () {
 
         // уменьшаем
-        if (innerWidth <= obj.breakPoint) {
+        if (innerWidth <= breakPoint) {
 
             // проверка состояния дом чтобы не запускать выполнение цикла при любом ресайзе
             if (document.querySelectorAll(obj.mainElem + ' .respons-tabs__menu' + ' .respons-tabs__text-item').length == 0) {
@@ -69,11 +70,6 @@ function MyTabs(obj) {
     // адаптив 
 
     if (obj.adaptive === true) {
-        // проверка параметра breakPoint
-        if (obj.breakPoint === typeof obj.breakPoint !== 'number') {
-            obj.breakPoint = 768
-        }
-
         _this.responsiveTabs()
         window.onresize = _this.responsiveTabs;
     }
