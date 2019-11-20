@@ -21,9 +21,9 @@ to init
 </section>
 
 
-new MyTabs({
-    mainElem: '.YOUR_CLASS',
-    activeClass: 'YOUR_CLASS_active',
-    adaptive: true,
-    breakPoint: '768'
+new MyTabs({ <br>
+    mainElem: '.YOUR_CLASS',  <br>
+    activeClass: 'YOUR_CLASS_active',  <br>
+    adaptive: true,  <br>
+    breakPoint: '768'  <br>
 });
