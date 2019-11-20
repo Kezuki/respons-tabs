@@ -1,7 +1,7 @@
 # respons-tabs
 
 
-to init
+to init 
 
 <section class="respons-tabs YOUR_CLASS">
         <div class="respons-tabs__menu">
