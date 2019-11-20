@@ -1,6 +1,6 @@
 new MyTabs({
     mainElem: '.jsRespons-tabs22',
-    activeClass: 'respons-tabs__menu-item_active',
+    /* activeClass: 'respons-tabs__menu-item_active', */
     adaptive: true,
     breakPoint: '768'
 });
