@@ -3,7 +3,7 @@
 
 to init 
 
-####Javascript　
+#### Javascript　
 
 ```javascript
 
@@ -15,7 +15,7 @@ new MyTabs({
 });
 ```
 
-####HTML code
+#### HTML code
 
 ```html
 <section class="respons-tabs YOUR_CLASS">
